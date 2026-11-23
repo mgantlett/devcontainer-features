@@ -1,0 +1,31 @@
+{
+  "id": "nomos",
+  "version": "1.0.0",
+  "name": "Nomos Deterministic Engineering Substrate",
+  "documentationURL": "https://sophialabs.ca/docs/introduction",
+  "licenseURL": "https://github.com/mgantlett/nomos/blob/main/LICENSE",
+  "description": "Installs the SHA-256 verified Nomos static Go binary (42 polyglot AST verification gates, X-Ray scanner, and agent lifecycle hooks) into Dev Containers and GitHub Codespaces.",
+  "keywords": [
+    "nomos",
+    "coding-agents",
+    "ast",
+    "verification",
+    "claude-code",
+    "cursor",
+    "mcp"
+  ],
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest",
+        "4.31.0"
+      ],
+      "default": "latest",
+      "description": "Nomos release version to install (e.g. latest or 4.31.0)."
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}
